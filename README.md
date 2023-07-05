@@ -6,14 +6,7 @@
 
 ## 为什么选择Xray-Vless？
 
-项目名称	Shadowsocks/SS	Shadowsocks-R/SSR	V2Ray	Trojan	Trojan-Go	Xray 
-创建时间	2015年	2016年	2019下半年	2019年底	2020年8月	2020年11月
-支持协议	sock5	sock5+混淆协议	Blackhole Freedom HTTP MTProto Shadowsocks Socks VMess	类似V2ray“WS+TLS”模式的精简版	类似V2ray“WS+TLS”模式的精简版	V2ray的升级版（包含V2ray所有协议） VLESS协议
-速度评分	6	5	1	2	3	4
-推荐评分	2	1	4	3	5	6
-推荐理由	古董产品， 不推荐	古董产品， 不推荐	V2ray比较成熟，自用1年半 支持的配套客户端是最多的，隐秘性良好 长期使用没有断过网	相比V2ray，速度更快，更轻量级 相比trojan-go 比较老了，因此排名后面	速度方面次于Xray、隐秘更强，客户端比较单一	Xray性能最好、速度更快，隐秘方面也是很不错 更新比较快，支持的客户端也多
 ![image](https://github.com/wuzhejia/vless-vpn-guide/assets/95853356/13b61845-3db6-4607-a39d-9d2133b5a1a9)
-
 
 ## 整体流程
 1. 购买VPS（16.8元/月，162元/年享8.3折）
