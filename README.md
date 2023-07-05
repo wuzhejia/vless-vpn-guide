@@ -1,82 +1,75 @@
-# 保姆级搭建自用VPN伪装流量访问chatgpt（仅供个人学习使用）
+# 保姆级搭建自用VPN伪装流量访问ChatGPT（仅供个人学习使用）
 
-之前用的某品牌的VPN年花费300元，而且速度很慢，还不能用chatgpt！
+之前使用某品牌的VPN花费了300元每年，而且速度很慢，还不能用于ChatGPT！
 
-一怒之下，自行搭建个人总体花费 177元！一个月14块！
+一怒之下，自己搭建了个人VPN，总花费只有177元，每月仅14元！
 
 ## 整体流程
-1.购买VPS（16.8元/月，162元/年付8.3折）
+1. 购买VPS（16.8元/月，162元/年享8.3折）
+2. 购买域名（15.83元/年）
+3. 部署服务端
+4. 部署客户端
+5. 注册ChatGPT账号
 
-2.购买域名（15.83元/年）
+## 1. 购买VPS
+我个人选择了Hostyun（https://my.hostyun.com/page.aspx?c=referral&u=36043），因为不是所有厂商都敢直接承认自己的服务器性能差，但我们需要的是性价比和网速，不是吗？😊
 
-3.部署服务端
+可以参考不同类型的VPS：https://wzfou.com/cn2-gia-vps/
 
-4.部署客服端
+推荐购买韩国的VPS，香港的VPS无法使用ChatGPT。
 
-5.注册chatgpt账号
+![VPS选择截图](https://github.com/wuzhejia/vless-vpn-guide/assets/95853356/32202bb2-c2b2-47ed-a8b8-b60056b7daf9)
 
-## 1.购买VPS
-我个人选择的是Hostyun（https://my.hostyun.com/page.aspx?c=referral&u=36043）
-，毕竟不是所有厂商敢直接说自己服务器是垃圾的，但我们要的是便宜和网速不是么😊
+选择CentOS 7操作系统。
 
-各类VPS对比：https://wzfou.com/cn2-gia-vps/
+![操作系统选择截图](https://github.com/wuzhejia/vless-vpn-guide/assets/95853356/2170c9fb-c7b2-4872-a47b-563c5f31439e)
 
-推荐购买韩国的VPS，香港的VPS是无法使用chatgpt的。
+购买时输入优惠码hostyun可享受九折优惠！
 
-![image](https://github.com/wuzhejia/vless-vpn-guide/assets/95853356/32202bb2-c2b2-47ed-a8b8-b60056b7daf9)
+![购买截图](https://github.com/wuzhejia/vless-vpn-guide/assets/95853356/495e853b-7f1f-4e5e-aab3-f7c2751d2113)
 
-系统选择centos7。
+现在你也拥有了自己的服务器！（箭头所示的IP、用户名和密码将在后续使用中需要！）
 
-![image](https://github.com/wuzhejia/vless-vpn-guide/assets/95853356/2170c9fb-c7b2-4872-a47b-563c5f31439e)
+![服务器信息截图](https://github.com/wuzhejia/vless-vpn-guide/assets/95853356/c1ffe3b4-92cf-419f-b800-7ca3312325f7)
 
-购买输入 hostyun 打九折！
+## 2. 购买域名
 
-![image](https://github.com/wuzhejia/vless-vpn-guide/assets/95853356/495e853b-7f1f-4e5e-aab3-f7c2751d2113)
+目前我无法找到免费的域名供您使用，只能自费购买，有些可惜😭
 
-现在你也是自己有服务器的人了！（箭头所示的IP，用户，密码后面要用！）
+可参考：https://iweec.com/144.html
 
-![image](https://github.com/wuzhejia/vless-vpn-guide/assets/95853356/c1ffe3b4-92cf-419f-b800-7ca3312325f7)
+最终效果如下：
 
-## 2.购买域名
+![域名购买截图](https://github.com/wuzhejia/vless-vpn-guide/assets/95853356/0e73a848-5bdd-48b4-9a62-b40ca636f95f)
 
-我目前是没办法找到免费的域名了，只能自讨腰包，泪目😭
+## 3. 部署服务端
 
-参考：https://iweec.com/144.html
+通过ssh root@<你的公网IP>命令，输入hostyun箭头所指的密码以登录成功！
 
-最终效果：![image](https://github.com/wuzhejia/vless-vpn-guide/assets/95853356/0e73a848-5bdd-48b4-9a62-b40ca636f95f)
+然后按照参考脚本的提示，逐步操作，关键步骤是在伪装选项中选择3！经实测，选择1进行流量转发可能导致VPN无法正常使用！
 
-## 3.部署服务端
+<img width="864" alt="服务端部署截图" src="https://github.com/wuzhejia/vless-vpn-guide/assets/95853356/7f6b5b7e-d5c0-4c64-a142-f5e4e9d1d9ab">
 
-ssh root@<你的公网ip> 输入hostyun箭头所指的密码！登陆成功！
+复制vless的蓝色字符串，客户端会用到！
 
-然后跟着参考脚本提示一步步照做即可，关键为伪装这一步选3！实测选1转发流量时会报错导致VPN无法正常使用！
+<img width="1045" alt="蓝色字符串截图" src="https://github.com/wuzhejia/vless-vpn-guide/assets/95853356/d4fe7b3a-6e85-48e6-9e33-d9d0fa260a7f">
 
-<img width="864" alt="image" src="https://github.com/wuzhejia/vless-vpn-guide/assets/95853356/7f6b5b7e-d5c0-4c64-a142-f5e4e9d1d9ab">
+参考文档：https://github.com/kirin10000/Xray-script/blob/main/README.md
 
-复制vless的蓝色字符串，客户端需要使用！
+## 4. 部署客户端
 
-<img width="1045" alt="image" src="https://github.com/wuzhejia/vless-vpn-guide/assets/95853356/d4fe7b3a-6e85-48e6-9e33-d9d0fa260a7f">
+本人使用的是mac m1笔记本，未对Windows进行实测，请注意！（该问题确实让我折腾了很久，真是令人头疼！）
 
-
-参考：https://github.com/kirin10000/Xray-script/blob/main/README.md
-
-## 4.部署客户端
-
-本人笔记本为mac m1，windows部分并未实测请注意！（这个核心真的是踩了好久的坑，也是醉了！）
-
-黏贴上面的蓝色字符串！
-
+将上述蓝色字符串粘贴进去！
 
 右键连接！
 
-<img width="835" alt="image" src="https://github.com/wuzhejia/vless-vpn-guide/assets/95853356/66e8acd2-6bc2-4276-aae3-055c83440cbf">
+<img width="835" alt="客户端部署截图" src="https://github.com/wuzhejia/vless-vpn-guide/assets/95853356/66e8acd2-6bc2-4276-aae3-055c83440cbf">
 
-参考：https://xtrojan.vip/client/qv2ray-tutorial.html
+参考文档：https://xtrojan.vip/client/qv2ray-tutorial.html
 
-## 5.注册chatgpt账号
+## 5. 注册ChatGPT账号
 
-现在就可以让chatgpt帮你写英文的电子邮件，代码！太香啦！
+现在，您可以让ChatGPT帮您撰写英文邮件和代码了，真是太棒了！
 
-参考：https://chatgptzhanghao.com/
-
-
+参考文档：https://chatgptzhanghao.com/
