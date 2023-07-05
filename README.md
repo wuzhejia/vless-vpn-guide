@@ -1,15 +1,16 @@
-# 保姆级搭建自用VPN（仅供个人学习使用）
+# 保姆级搭建自用VPN伪装流量访问chatgpt（仅供个人学习使用）
 
-个人总体花费
+之前用的某品牌的VPN年花费300元，而且速度很慢，还不能用chatgpt！
+一怒之下，自行搭建个人总体花费 177元！一个月14块！
 
 ## 整体流程
 1.购买VPS（16.8元/月，162元/年付8.3折）
-2.购买域名
+2.购买域名（15.83元/年）
 3.部署服务端
 4.部署客服端
 5.注册chatgpt账号
 
-## 购买VPS
+## 1.购买VPS
 我个人选择的是Hostyun（https://my.hostyun.com/page.aspx?c=referral&u=36043），毕竟不是所有厂商敢直接说自己服务器是垃圾的，但我们要的是便宜和网速不是么😊
 
 各类VPS对比：https://wzfou.com/cn2-gia-vps/
@@ -29,3 +30,36 @@
 现在你也是自己有服务器的人了！（箭头所示的IP，用户，密码后面要用！）
 
 ![image](https://github.com/wuzhejia/vless-vpn-guide/assets/95853356/c1ffe3b4-92cf-419f-b800-7ca3312325f7)
+
+## 2.购买域名
+
+我目前是没办法找到免费的域名了，只能自讨腰包，泪目😭
+
+参考：https://iweec.com/144.html
+
+最终效果：![image](https://github.com/wuzhejia/vless-vpn-guide/assets/95853356/0e73a848-5bdd-48b4-9a62-b40ca636f95f)
+
+## 3.部署服务端
+
+跟着参考脚本提示一步步照做即可，关键为伪装这一步选3！实测选1转发流量时会报错导致VPN无法正常使用！
+
+<img width="864" alt="image" src="https://github.com/wuzhejia/vless-vpn-guide/assets/95853356/7f6b5b7e-d5c0-4c64-a142-f5e4e9d1d9ab">
+
+参考：https://github.com/kirin10000/Xray-script/blob/main/README.md
+
+## 4.部署客户端
+
+本人笔记本为mac m1，windows部分并未实测请注意！（这个核心真的是踩了好久的坑，也是醉了！）
+
+<img width="815" alt="image" src="https://github.com/wuzhejia/vless-vpn-guide/assets/95853356/ce803b85-4e0d-4f06-8b1a-cfb54b012abf">
+
+
+参考：https://xtrojan.vip/client/qv2ray-tutorial.html
+
+## 5.注册chatgpt账号
+
+现在就可以让chatgpt帮你写英文的电子邮件，代码！太香啦！
+
+参考：https://chatgptzhanghao.com/
+
+
