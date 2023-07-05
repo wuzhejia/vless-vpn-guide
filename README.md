@@ -62,6 +62,8 @@
 
 将上述蓝色字符串粘贴进去！
 
+<img width="824" alt="image" src="https://github.com/wuzhejia/vless-vpn-guide/assets/95853356/880ecb46-7d66-4c0a-af78-ea601b2167fb">
+
 右键连接！
 
 <img width="835" alt="客户端部署截图" src="https://github.com/wuzhejia/vless-vpn-guide/assets/95853356/66e8acd2-6bc2-4276-aae3-055c83440cbf">
