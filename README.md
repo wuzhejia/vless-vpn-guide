@@ -53,11 +53,21 @@ ssh root@<你的公网ip> 输入hostyun箭头所指的密码！登陆成功！
 
 <img width="864" alt="image" src="https://github.com/wuzhejia/vless-vpn-guide/assets/95853356/7f6b5b7e-d5c0-4c64-a142-f5e4e9d1d9ab">
 
+复制vless的蓝色字符串，客户端需要使用！
+
+<img width="1045" alt="image" src="https://github.com/wuzhejia/vless-vpn-guide/assets/95853356/d4fe7b3a-6e85-48e6-9e33-d9d0fa260a7f">
+
+
 参考：https://github.com/kirin10000/Xray-script/blob/main/README.md
 
 ## 4.部署客户端
 
 本人笔记本为mac m1，windows部分并未实测请注意！（这个核心真的是踩了好久的坑，也是醉了！）
+
+黏贴上面的蓝色字符串！
+
+
+右键连接！
 
 <img width="835" alt="image" src="https://github.com/wuzhejia/vless-vpn-guide/assets/95853356/66e8acd2-6bc2-4276-aae3-055c83440cbf">
 
