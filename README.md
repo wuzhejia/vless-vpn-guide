@@ -12,7 +12,8 @@
 5. 注册ChatGPT账号
 
 ## 1. 购买VPS
-我个人选择了Hostyun（https://my.hostyun.com/page.aspx?c=referral&u=36043），因为不是所有厂商都敢直接承认自己的服务器性能差，但我们需要的是性价比和网速，不是吗？😊
+我个人选择了Hostyun（https://my.hostyun.com/page.aspx?c=referral&u=36043）
+，因为不是所有厂商都敢直接承认自己的服务器性能差，但我们需要的是性价比和网速，不是吗？😊
 
 可以参考不同类型的VPS：https://wzfou.com/cn2-gia-vps/
 
